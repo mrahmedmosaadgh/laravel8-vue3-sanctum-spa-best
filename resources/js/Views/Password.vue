@@ -40,6 +40,7 @@
 
 
 <script>
+
 import { XIcon } from '@heroicons/vue/solid';
 import Errors from '../components/Errors.vue';
 import Success from '../components/Success.vue';

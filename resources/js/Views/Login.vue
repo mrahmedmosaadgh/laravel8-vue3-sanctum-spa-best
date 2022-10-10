@@ -82,6 +82,7 @@ export default {
             try {
                 await this.$store.dispatch('login' , {'email' : this.email , 'password' : this.password})
                 this.$router.push({name: 'home'})
+
             }
             catch (e){
                 this.errors = e.data

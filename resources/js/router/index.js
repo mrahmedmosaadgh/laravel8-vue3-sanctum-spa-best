@@ -1,14 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import routes from './routes.js'
+import routadmin from './routadmin.js'
 import store from '../store'
-  
+
+
+
+
 const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes,routadmin
 })
 
 router.beforeEach((to, from, next) => {
- 
+  document.title = to.meta.title || 'SchoolEveryThing'
     if (store.getters.user) {
       if (to.matched.some(route => route.meta.guard === 'guest')) next({ name: 'home' })
       else next();

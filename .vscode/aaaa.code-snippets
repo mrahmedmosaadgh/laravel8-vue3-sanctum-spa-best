@@ -1,0 +1,573 @@
+{
+	"Print to console1": {
+
+			"prefix": "lgg",
+			"body":
+			[
+				"console.log($1);",
+				"$2"
+			]
+			,
+			"description": "Log output to console"
+		},
+
+		"select vue": {
+			"prefix": "selectvue1",
+			"body": [
+			  "<select v-model=\"$1\" >",
+			  "<option\r",
+			  "v-for=\"(item,index) in collection\" :key=\"index\"\r",
+			  " value=\"$2\"\r",
+			  " >{{$2}}</option>\r",
+			  "</select>"
+			],
+			"description": "select vue"
+		  },
+
+
+		  "try catch laravel": {
+			"prefix": "catchtrylaravel",
+			"body": [
+			  "try {",
+			  "$1",
+			  "",
+			  "",
+			  "",
+			  "",
+			  "    return response()->json([",
+			  "        'message' => 'success',",
+			  "        'data' => $$request->all(),",
+			  "    ]);",
+			  "",
+			  "} catch (\\Throwable $$th) {",
+			  "    return response()->json([",
+			  "        'message' => 'error',",
+			  "        'data' => $$th,",
+			  "    ]);",
+			  "}"
+			],
+			"description": "try catch laravel"
+		  },
+
+
+		"btnvue": {
+			"prefix": "btnvue",
+			"body": "        <p><button @click=\"$tble_MarksSetup_fromdb()\">$MarksSetup</button></p>",
+			"description": "btnvue"
+		  },
+		"asyncaxios ": {
+			"prefix": "asyncaxios",
+			"body": [
+			  "    async   fromdbfun(){",
+			  "                // this.loading = true;  ",
+			  "                try{",
+			  "                await axios.post(\"/api/class/all\" )",
+			  "                .then((res) => {",
+			  "                this.datadb = res.data;",
+			  "console.log(res.data);",
+			  "                // this.loading = false;",
+			  "                });",
+			  "                } catch (e) {",
+			  "                console.log(e);",
+			  "                // alert(e.response.status);",
+			  "                }",
+			  "              },//fromdbfun"
+			],
+			"description": "asyncaxios "
+		  },
+
+		"table vue": {
+			"prefix": "tblvue1",
+			"body": [
+			  "   <div class=\"tg-wrap\"><table id=\"tg-s97YL\">",
+			  "<thead>\r",
+			  "  <tr>\r",
+			  "    <th>#</th>\r",
+			  "    <th>Name</th>\r",
+			  "    <th>date</th>\r",
+			  "    <th>notes</th>\r",
+			  "  </tr>\r",
+			  "</thead>\r",
+			  "<tbody>\r",
+			  "  <tr v-for=\"(item,index) in items\" :key=\"index\">\r",
+			  "    <td>{{index+1}}</td>\r",
+			  "    <td>{{item.name}}</td>\r",
+			  "    <td>{{item.date}}</td>\r",
+			  "    <td>{{item.notes}}</td>\r",
+			  "  </tr>\r",
+			  "</tbody>\r",
+			  "</table></div>"
+			],
+			"description": "table vue1"
+		  },
+
+
+		  "table vue2": {
+			"prefix": "tblvue2",
+			"body": [
+			  " <!-- t_head=[], -->",
+			  "        <!-- t_body=[], -->\r",
+			  "        <div class=\"tg-wrap\" v-if=\"t_head != null\">\r",
+			  "            <table class=\"tg\">\r",
+			  "                <thead>\r",
+			  "                    <tr>\r",
+			  "                        <th class=\"th-tg1\">#</th>\r",
+			  "                        <th\r",
+			  "                            v-for=\"(item, index) in t_head\"\r",
+			  "                            :key=\"index\"\r",
+			  "                            class=\"th-tg1\"\r",
+			  "                        >\r",
+			  "                            {{ item }}\r",
+			  "                        </th>\r",
+			  "                    </tr>\r",
+			  "                </thead>\r",
+			  "                <tbody>\r",
+			  "                    <tr v-for=\"(item, index) in t_body\" :key=\"index\">\r",
+			  "                        <td :class=\"index % 2 == 0 ? 'td-tg1' : 'td-tg2'\">\r",
+			  "                            {{ index + 1 }}\r",
+			  "                        </td>\r",
+			  "\r",
+			  "                        <td :class=\"index % 2 == 0 ? 'td-tg1' : 'td-tg2'\">\r",
+			  "                            {{ item[`${t_head[0]}`] }}\r",
+			  "                        </td>\r",
+			  "                        <td :class=\"index % 2 == 0 ? 'td-tg1' : 'td-tg2'\">\r",
+			  "                            {{ item[`${t_head[1]}`] }}\r",
+			  "                        </td>\r",
+			  "                        <td :class=\"index % 2 == 0 ? 'td-tg1' : 'td-tg2'\">\r",
+			  "                            {{ item[`${t_head[2]}`] }}\r",
+			  "                        </td>\r",
+			  "                        <td :class=\"index % 2 == 0 ? 'td-tg1' : 'td-tg2'\">\r",
+			  "                            {{ item[`${t_head[3]}`] }}\r",
+			  "                        </td>\r",
+			  "                        <td :class=\"index % 2 == 0 ? 'td-tg1' : 'td-tg2'\">\r",
+			  "                            {{ item[`${t_head[4]}`] }}\r",
+			  "                        </td>\r",
+			  "                        <td :class=\"index % 2 == 0 ? 'td-tg1' : 'td-tg2'\">\r",
+			  "                            {{ item[`${t_head[5]}`] }}\r",
+			  "                        </td>\r",
+			  "                        <td :class=\"index % 2 == 0 ? 'td-tg1' : 'td-tg2'\">\r",
+			  "                            {{ item[`${t_head[6]}`] }}\r",
+			  "                        </td>\r",
+			  "                    </tr>\r",
+			  "                </tbody>\r",
+			  "            </table>\r",
+			  "        </div>\r",
+			  ""
+			],
+			"description": "table vue2"
+		  },
+
+
+
+
+
+
+
+		  "newvuepage": {
+			"prefix": "newvuepage",
+			"body": [
+			  "//routes.js",
+			  "const marks_search = () => import('../Views/marks/marks_search.vue')//marks_search\r",
+			  "    {path: '/marks/marks_search'      ,component: marks_search        ,name: 'marks_search'          ,meta: { auth: true, title: 'marks_search' }},\r",
+			  "//---------------------------------------------------------------------------------------------------------------------------------------------------------\r",
+			  "//marks_search.vue\r",
+			  "        async   findmymark_fun(){\r",
+			  "                    // this.loading = true;  \r",
+			  "                    try{\r",
+			  "                    await axios.post(\"/api/marks/marks_search\" )\r",
+			  "                    .then((res) => {\r",
+			  "                    this.datadb = res.data;\r",
+			  "console.log(res.data);",
+			  "                    // this.loading = false;\r",
+			  "                    });\r",
+			  "                    } catch (e) {\r",
+			  "                    console.log(e);\r",
+			  "                    // alert(e.response.status);\r",
+			  "                    }\r",
+			  "                  },//fromdbfun\r",
+			  "//---------------------------------------------------------------------------------------------------------------------------------------------------------\r",
+			  "//api.php\r",
+			  "            Route::post('/marks/marks_search', [MarksMarkController::class, 'marks_search']);\r",
+			  "//---------------------------------------------------------------------------------------------------------------------------------------------------------\r",
+			  "//MarksMarkController\r",
+			  "        public function marks_search(Request $$request)\r",
+			  "    {\r",
+			  "        return response()->json(['message' => 'marks_search from api','data' => $$request->all()]);\r",
+			  "\r",
+			  "    }\r",
+			  "//------------------$---------------------------------------------------------------------------------------------------------------------------------------"
+			],
+			"description": "newvuepage"
+		  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		"table col number": {
+			"prefix": "tbnum",
+			"body": "<td>{{index+1}}</td>",
+			"description": "table col number"
+		  },
+		  "console.log('$val: '+$val);": {
+			"prefix": "lgv",
+			"body": "console.log('$val: '+$val);",
+			"description": "console.log('$val: '+$val);"
+		  },
+
+		"{{}}": {
+			"prefix": "pv",
+			"body": "<p>$val:{{$val}}</p>",
+			"description": " pv {{}}"
+		  },
+
+		  "switch": {
+			"prefix": "switch",
+			"body": [
+			  "<label class=\"switch\">",
+			  "  <input type=\"checkbox\" checked>\r",
+			  "  <span class=\"slider round\"></span>\r",
+			  "</label>"
+			],
+			"description": "switch"
+		  },
+
+		"button vue": {
+			"prefix": "bb",
+			"body": "<button class=\"button\" @click=\"$fun()\">$fun</button>",
+			"description": "Long Description"
+		  },
+		"insert laravel": {
+			"prefix": "insertLaravel",
+			"body": [
+			  "$user = DB::table('users')->insert([",
+			  "    'name' => 'Juan Dela Cruz',",
+			  "]);"
+			],
+			"description": "button vue"
+		  },
+
+
+		"update laravel": {
+			"prefix": "update",
+			"body": [
+			  "                Scschoolstudentattenddence::",
+			  "                            where(\"school_id\", Auth::user()->school_id)",
+			  "                            ->where(\"teacher_id\", Auth::user()->id)",
+			  "                            ->where(\"student_id\", $$value['student_id'])",
+			  "                             ->where(\"date\", $$value['date'])",
+			  "                            ->where(\"period\", $$value['period'])",
+			  "                            ->update([",
+			  "                                \"attendence_status\" =>$$value['attendence_status'],",
+			  "                                \"datetime\" =>now(),",
+			  "                            ]);"
+			],
+			"description": "update laravel"
+		  },
+
+
+
+
+		"updateOrCreate laravel": {
+			"prefix": "updateOrCreate",
+			"body": [
+			  "                            $$matchThese = [",
+			  "                                'school_id'=>Auth::user()->school_id,",
+			  "                                                ];",
+			  "                                      $$rand_color=    '#' . str_pad(dechex(mt_rand(0, 0xFFFFFF)), 6, '0', STR_PAD_LEFT);",
+			  "                                $$datain = [",
+			  "                                    'school_id'=>Auth::user()->school_id,",
+			  "                                    'schoolgroup_id'=>Auth::user()->schoolgroup_id,",
+			  "                                    'color'=>$$rand_color,",
+			  "                                            ];",
+			  "                                scschoolclassteachersubject::updateOrCreate($$matchThese,$$datain);"
+			],
+			"description": "updateOrCreate laravel rand_color"
+		  },
+
+
+
+
+
+		"details summary": {
+			"prefix": "detail1",
+			"body": [
+			  "<details>",
+			  "  <summary>\r",
+			  "    \r",
+			  "  </summary>\r",
+			  "\r",
+			  "</details>"
+			],
+			"description": "details summary"
+		  },
+
+
+		  "list numbers": {
+			"prefix": "ln",
+			"body": [
+			  "0",
+			  "1",
+			  "2",
+			  "3",
+			  "4",
+			  "5",
+			  "6",
+			  "7",
+			  "8",
+			  "9",
+			  "10"
+
+			],
+			"description": "list numbers"
+		  },
+
+
+
+		"table->bigIncrements": {
+			"prefix": "sch",
+			"body": [
+			  "            $$table->bigIncrements('id');",
+			  "            $$table->unsignedBigInteger('school_id');",
+			  "            $$table->date('termdate');",
+			  "            $$table->integer('week')->nullable();",
+			  "            $$table->integer('day')->nullable();",
+			  "            $$table->boolean('work')->default(1);",
+			  "            $$table->string('notes')->nullable();",
+			  "            $$table->timestamps();",
+			  "",
+			  "            $$table->foreign('school_id')->references('id')->on('users')->onDelete('cascade');",
+			  ""
+			],
+			"description": "Schema table->bigIncrements"
+		  },
+
+	"delete table row laravel": {
+
+			"prefix": "delrow",
+			"body":
+			[
+			"public function delete(Request $$request)",
+			"    {",
+			"    try {",
+			"    scschoolteacher::find($$request->id)->delete();",
+			"",
+			"        return response()->json(['message' => 'success  deleted:'.$$request->id]);",
+			"         }   ",
+			"    catch (\\Throwable $$th) ",
+			"        {",
+			"        return response()->json(['message' => ' error deleted:'.$$th]);      ",
+			"        }",
+			"",
+			"}//delete---------------------------------------------------------------------------",
+			""
+		  ]
+			,
+			"description": "delete table row laravel"
+		},
+
+
+	"update laravel table row": {
+
+			"prefix": "uprow",
+			"body":
+
+			[
+  "        try {",
+  "                $$update = Model::findOrFail($$request->id);",
+  "",
+  "                $$update->update([",
+  "                    'className'=>$$request->className,",
+  "                    'stage'    =>$$request->stage    ,",
+  "                ]);",
+  "                $$update->save();",
+  "",
+  "",
+  "        } catch (\\Throwable $$th) {",
+  "            //throw $$th;",
+  "            return response()->json(['message' => 'err:'.$$th]);",
+  "        }"
+]
+
+			,
+
+			"description": "update laravel table row"
+		},
+
+	"square array": {
+
+			"prefix": "sarr",
+			"body": [
+			"let uuu =[]",
+			"let uuuday =[]",
+			"for (let indexday = 0; indexday < 7; indexday++) {",
+			"  uuuday =[]",
+			"    for (let indexperiod = 0; indexperiod < 15; indexperiod++) {",
+			"    uuuday.push({'sid':'','name':'','id':'','newid':'','day':indexday,'period':indexperiod,'dayrr':indexday,'periodrr':indexperiod})",
+			"      console.log(\"indexday+':'+indexperiod\");",
+			"      console.log(indexday);",
+			"      console.log(indexperiod);",
+			"",
+			"    }",
+			"",
+			"uuu.push(uuuday)",
+			"}"
+			],
+			"description": "square array"
+		},
+
+
+
+
+
+
+	"laravel public function": {
+
+			"prefix": "pf",
+			"body": [
+				"    public function scheduleupdate(Request $$request){",
+				"// return response()->json(['message' => 'scheduleupdate']);",
+				" return response()->json(['message' => $$request->all()]);",
+				"    }",
+			],
+			"description": "laravel public function"
+		},
+
+
+		"ax": {
+
+			"prefix": "ax",
+			"body": [
+			"//async ",
+			"try{",
+		   " await axios.post('/api/teacher/update',{data:this.alltxt})",
+			".then((res) => {",
+			"    console.log(res.data.message);",
+			"   // this.datamsg =res.data.message;",
+			"});",
+			"} catch (e) {",
+			"console.log(e);",
+			"//this.datamsg = 'data error';",
+			"}",
+		"//setTimeout(() => this.datamsg = '', 5000);",
+
+"},",
+			],
+			"description": "axios.post"
+		},
+	"axio2": {
+			"scope": "javascript,typescript",
+			"prefix": "axio2",
+			"body": [
+				"async   update2(){",
+				"//this.datamsg = 'saving teachers ...';" ,
+				"try{",
+			   " await axios.post('/api/teacher/update',{data:this.alltxt})",
+				".then((res) => {",
+				"    this.datamsg =res.data.message;",
+				"console.log(res.data);",
+				"});",
+				"} catch (e) {",
+				"this.datamsg = 'data error';",
+				"}",
+			"//setTimeout(() => this.datamsg = '', 5000);",
+	
+	"},",
+	
+	
+			],
+			"description": "Log output to console"
+		},
+	
+	"vfor": {
+			"scope": "javascript,typescript",
+			"prefix": "vfor",
+			"body": [
+				" v-for=\"(item,index) in collection\" :key='index' "
+			],
+			"description": "v-for vue 3"
+		},
+	"table1": {
+			"scope": "javascript,typescript",
+			"prefix": "table1",
+			"body":
+				[
+					"           <table  class='tbl1'>",
+					"           <thead>",
+					"               <tr>",
+					"                   <th></th>",
+					"                   <th></th>",
+					"                   <th></th>",
+					"                   <th></th>",
+					"                   <th></th>",
+					"                   <th></th>",
+					"                   <th></th>",
+					"               </tr>",
+					"           </thead>",
+					"           <tbody>",
+					"               <tr>",
+					"                   <td></td>",
+					"                   <td></td>",
+					"                   <td></td>",
+					"                   <td></td>",
+					"                   <td></td>",
+					"               </tr>",
+					"           </tbody>",
+					"       </table>"
+				  ],
+	
+			"description": "table1"
+		},
+	
+	"axio1": {
+			"scope": "javascript,typescript",
+			"prefix": "axio1",
+			"body": [
+				"async   update(){",
+				"//this.datamsg = 'saving teachers ...';" ,
+				"try{",
+			   " await axios.post('/api/teacher/update',{data:this.alltxt})",
+				".then((res) => {",
+				"    this.datamsg =res.data.message;",
+				"console.log(res.data);",
+				"});",
+				"} catch (e) {",
+				"this.datamsg = 'data error';",
+				"}",
+			"//setTimeout(() => this.datamsg = '', 5000);",
+	
+	"},",
+	
+	
+			],
+			"description": "Log output to console"
+		},
+	"timeout": {
+			"scope": "javascript,typescript",
+			"prefix": "timeout",
+			"body": [
+				" setTimeout(() => this.datamsg = '', 5000);",
+	
+	
+	
+			],
+			"description": "Log output to console"
+		}
+	}

@@ -3,7 +3,6 @@
     class="
       flex
       items-start
-      border
       px-4
       py-3
       rounded

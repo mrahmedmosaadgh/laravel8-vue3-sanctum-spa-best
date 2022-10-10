@@ -1,6 +1,6 @@
 <template>
     <div class="border font-semibold  p-4  flex items-center justify-between">
-        Profile
+        Profile:{{user}}
         <div class="text-gray-600 text-sm font-medium">
             {{verified ? `Verified at : ${ moment(verified).format('MMMM Do YYYY, h:mm a')} ` : 'Not verified !'}}
         </div>
@@ -18,7 +18,7 @@
 
                     <form class="md:w-10/12 md:p-4 w-full mx-auto" @submit.prevent="update">
                         <div class=" w-full my-1 py-2 sm:flex  sm:items-center sm:justify-between">
-                            <label for="name" class="w-4/12 "> Name </label>
+                            <label for="name" class="w-4/12 "> Name====== </label>
                             <input type="text" v-model="name"  name="name" class="border border-gray-300 bg-white sm:w-8/12 w-full p-2 mt-3 sm:mt-0 focus:outline-none rounded-sm ">
                         </div>
                         <div class=" w-full my-1 py-2 sm:flex  sm:items-center sm:justify-between">
@@ -26,17 +26,19 @@
                             <input type="email" v-model="email" name="email" class="border border-gray-300 bg-white sm:w-8/12 w-full p-2 mt-3 sm:mt-0 focus:outline-none rounded-sm">
                         </div>
                        
-                        <div class=" w-full my-1 py-2 sm:flex  sm:items-center  sm:justify-end">
+                        <div   class=" w-full my-1 py-2 sm:flex  sm:items-center  sm:justify-end">
                             <div class="sm:w-8/12 w-full  flex justify-between items-center mt-3 sm:mt-0">
                                  <div v-if="busy"  class="flex justify-center items-center p-2 px-6 rounded-sm text-white bg-blue-500 hover:bg-blue-600"> 
                                    <circle-svg class="w-6 h-6" />
                                 </div>
-                                <button v-else type="submit" class="p-3 rounded-sm text-white bg-blue-500 hover:bg-blue-600">Update</button>
+                                <button   v-else type="submit" class="p-3 rounded-sm text-white bg-blue-500 hover:bg-blue-600">Update</button>
                             </div>
                         </div>
                     </form>
+<!-- <p>roles:{{roles}}</p>     v-if="permissions.has('profile-update')" 
+      
 
-
+<p>permissions:{{permissions}}</p> -->
     </div>
 </template>
 
@@ -62,6 +64,9 @@ export default {
             success : '' ,
             busy : false ,
 
+            // current_user:{},
+            // roles      :new Set(),
+            // permissions:new Set(),
         }
     },
     computed : {
@@ -72,8 +77,23 @@ export default {
             return this.$store.getters.verified
         }
     },
-    
+            created(){
+console.log('created');
+// console.log(window.user);
+// console.log(window.user_roles);
+// console.log(window.user_permissions);
+// this.current_user=window.user
+// window.user_roles.forEach(r => {
+//     this.roles.add(r.name)
+// });
+// window.user_permissions.forEach(p => {
+//     this.permissions.add(p.name)
+// });
+
+ 
+        },
     methods : {
+
         async update(){
             this.busy = true ;
             this.errors = null 

@@ -1,0 +1,348 @@
+<template>
+  <div >
+
+<div class="nav backgrad"  v-if="$store.getters.isuser" >
+
+
+  <div class="nav-header">
+    <div class="nav-title">
+     <!-- SchoolEveryThing -->
+<svg @click="$router.push('marks_setup')" class=" cursor-pointer" xmlns="http://www.w3.org/2000/svg" style="margin: auto; display: block; shape-rendering: auto; background: none;" width="158"      height="31" preserveAspectRatio="xMidYMid">
+
+<g style="transform-origin:79px 15.5px;transform:scale(1)">
+<g transform="translate(79,15.5)">
+  <g transform="translate(0,0)"><g class="path" style="transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: -67.81px -1.26701px; animation: 1s linear -0.621176s infinite normal forwards running bounce-e4bb3182-e2d4-417c-a5dd-130f79a7694c;"><path d="M0.54-1.06L1.40-2.50L1.40-2.50Q2.05-1.96 2.86-1.62L2.86-1.62L2.86-1.62Q3.67-1.28 4.75-1.28L4.75-1.28L4.75-1.28Q6.05-1.28 6.80-1.82L6.80-1.82L6.80-1.82Q7.56-2.36 7.56-3.28L7.56-3.28L7.56-3.28Q7.56-3.65 7.45-3.98L7.45-3.98L7.45-3.98Q7.34-4.30 7.03-4.60L7.03-4.60L7.03-4.60Q6.71-4.90 6.15-5.19L6.15-5.19L6.15-5.19Q5.58-5.49 4.68-5.83L4.68-5.83L4.68-5.83Q3.71-6.21 3.03-6.58L3.03-6.58L3.03-6.58Q2.36-6.95 1.94-7.39L1.94-7.39L1.94-7.39Q1.53-7.83 1.35-8.36L1.35-8.36L1.35-8.36Q1.17-8.89 1.17-9.58L1.17-9.58L1.17-9.58Q1.17-10.24 1.45-10.84L1.45-10.84L1.45-10.84Q1.73-11.43 2.28-11.87L2.28-11.87L2.28-11.87Q2.83-12.31 3.63-12.56L3.63-12.56L3.63-12.56Q4.43-12.82 5.45-12.82L5.45-12.82L5.45-12.82Q6.57-12.82 7.45-12.59L7.45-12.59L7.45-12.59Q8.33-12.37 9.20-11.95L9.20-11.95L8.57-10.49L8.57-10.49Q7.96-10.85 7.14-11.10L7.14-11.10L7.14-11.10Q6.32-11.34 5.42-11.34L5.42-11.34L5.42-11.34Q4.23-11.34 3.55-10.88L3.55-10.88L3.55-10.88Q2.86-10.42 2.86-9.67L2.86-9.67L2.86-9.67Q2.86-9.31 2.96-9.03L2.96-9.03L2.96-9.03Q3.06-8.75 3.36-8.49L3.36-8.49L3.36-8.49Q3.65-8.23 4.19-7.96L4.19-7.96L4.19-7.96Q4.72-7.69 5.60-7.36L5.60-7.36L5.60-7.36Q6.64-6.97 7.36-6.55L7.36-6.55L7.36-6.55Q8.08-6.14 8.51-5.67L8.51-5.67L8.51-5.67Q8.95-5.20 9.14-4.66L9.14-4.66L9.14-4.66Q9.32-4.12 9.32-3.47L9.32-3.47L9.32-3.47Q9.32-2.59 8.98-1.91L8.98-1.91L8.98-1.91Q8.64-1.22 8.04-0.75L8.04-0.75L8.04-0.75Q7.43-0.27 6.59-0.03L6.59-0.03L6.59-0.03Q5.74 0.22 4.75 0.22L4.75 0.22L4.75 0.22Q3.44 0.22 2.36-0.14L2.36-0.14L2.36-0.14Q1.28-0.49 0.54-1.06L0.54-1.06" fill="#51cacc" stroke="none" stroke-width="none" transform="translate(-72.7400107383728,5.032984794448394)" style="fill: rgb(81, 202, 204);"/></g><g class="path" style="transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: -58.09px 0.352985px; animation: 1s linear -0.582353s infinite normal forwards running bounce-e4bb3182-e2d4-417c-a5dd-130f79a7694c;"><path d="M18.13-9.02L17.64-7.65L17.64-7.65Q17.12-7.90 16.67-8.02L16.67-8.02L16.67-8.02Q16.22-8.14 15.66-8.14L15.66-8.14L15.66-8.14Q15.03-8.14 14.48-7.90L14.48-7.90L14.48-7.90Q13.93-7.67 13.54-7.23L13.54-7.23L13.54-7.23Q13.14-6.79 12.92-6.16L12.92-6.16L12.92-6.16Q12.69-5.53 12.69-4.72L12.69-4.72L12.69-4.72Q12.69-3.98 12.90-3.35L12.90-3.35L12.90-3.35Q13.10-2.72 13.48-2.24L13.48-2.24L13.48-2.24Q13.86-1.76 14.38-1.49L14.38-1.49L14.38-1.49Q14.90-1.22 15.55-1.22L15.55-1.22L15.55-1.22Q16.24-1.22 16.72-1.37L16.72-1.37L16.72-1.37Q17.21-1.51 17.77-1.82L17.77-1.82L18.27-0.45L18.27-0.45Q17.69-0.14 17.01 0.04L17.01 0.04L17.01 0.04Q16.33 0.22 15.44 0.22L15.44 0.22L15.44 0.22Q14.44 0.22 13.63-0.14L13.63-0.14L13.63-0.14Q12.82-0.50 12.24-1.15L12.24-1.15L12.24-1.15Q11.66-1.80 11.35-2.70L11.35-2.70L11.35-2.70Q11.03-3.60 11.03-4.68L11.03-4.68L11.03-4.68Q11.03-5.69 11.35-6.58L11.35-6.58L11.35-6.58Q11.66-7.47 12.26-8.14L12.26-8.14L12.26-8.14Q12.85-8.80 13.69-9.19L13.69-9.19L13.69-9.19Q14.53-9.58 15.57-9.58L15.57-9.58L15.57-9.58Q16.38-9.58 16.97-9.43L16.97-9.43L16.97-9.43Q17.57-9.29 18.13-9.02L18.13-9.02" fill="#51cacc" stroke="none" stroke-width="none" transform="translate(-72.7400107383728,5.032984794448394)" style="fill: rgb(157, 248, 113);"/></g><g class="path" style="transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: -48.645px -1.62702px; animation: 1s linear -0.543529s infinite normal forwards running bounce-e4bb3182-e2d4-417c-a5dd-130f79a7694c;"><path d="M21.78-13.32L21.78-7.87L21.78-7.87Q22.28-8.60 23.05-9.09L23.05-9.09L23.05-9.09Q23.81-9.58 24.88-9.58L24.88-9.58L24.88-9.58Q26.46-9.58 27.24-8.62L27.24-8.62L27.24-8.62Q28.03-7.67 28.03-6.10L28.03-6.10L28.03 0L26.41 0L26.41-5.92L26.41-5.92Q26.41-6.95 25.95-7.55L25.95-7.55L25.95-7.55Q25.49-8.15 24.62-8.15L24.62-8.15L24.62-8.15Q24.21-8.15 23.81-8.00L23.81-8.00L23.81-8.00Q23.40-7.85 23.04-7.58L23.04-7.58L23.04-7.58Q22.68-7.31 22.36-6.95L22.36-6.95L22.36-6.95Q22.03-6.59 21.78-6.19L21.78-6.19L21.78 0L20.16 0L20.16-13.32L21.78-13.32" fill="#51cacc" stroke="none" stroke-width="none" transform="translate(-72.7400107383728,5.032984794448394)" style="fill: rgb(224, 255, 119);"/></g><g class="path" style="transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: -37.98px 0.352985px; animation: 1s linear -0.504706s infinite normal forwards running bounce-e4bb3182-e2d4-417c-a5dd-130f79a7694c;"><path d="M37.76-4.68L37.76-4.68L37.76-4.68Q37.76-5.38 37.54-6.01L37.54-6.01L37.54-6.01Q37.31-6.64 36.91-7.11L36.91-7.11L36.91-7.11Q36.50-7.58 35.96-7.86L35.96-7.86L35.96-7.86Q35.41-8.14 34.76-8.14L34.76-8.14L34.76-8.14Q33.34-8.14 32.54-7.20L32.54-7.20L32.54-7.20Q31.75-6.26 31.75-4.72L31.75-4.72L31.75-4.72Q31.75-4.01 31.98-3.38L31.98-3.38L31.98-3.38Q32.20-2.74 32.61-2.26L32.61-2.26L32.61-2.26Q33.01-1.78 33.56-1.50L33.56-1.50L33.56-1.50Q34.11-1.22 34.76-1.22L34.76-1.22L34.76-1.22Q35.46-1.22 36.02-1.48L36.02-1.48L36.02-1.48Q36.58-1.73 36.96-2.19L36.96-2.19L36.96-2.19Q37.35-2.65 37.56-3.28L37.56-3.28L37.56-3.28Q37.76-3.91 37.76-4.68zM30.10-4.68L30.10-4.68L30.10-4.68Q30.10-5.81 30.46-6.72L30.46-6.72L30.46-6.72Q30.82-7.63 31.44-8.26L31.44-8.26L31.44-8.26Q32.06-8.89 32.91-9.23L32.91-9.23L32.91-9.23Q33.77-9.58 34.76-9.58L34.76-9.58L34.76-9.58Q35.73-9.58 36.59-9.23L36.59-9.23L36.59-9.23Q37.44-8.89 38.07-8.26L38.07-8.26L38.07-8.26Q38.70-7.63 39.06-6.73L39.06-6.73L39.06-6.73Q39.42-5.83 39.42-4.72L39.42-4.72L39.42-4.72Q39.42-3.60 39.07-2.69L39.07-2.69L39.07-2.69Q38.72-1.78 38.09-1.13L38.09-1.13L38.09-1.13Q37.46-0.49 36.60-0.14L36.60-0.14L36.60-0.14Q35.75 0.22 34.76 0.22L34.76 0.22L34.76 0.22Q33.75 0.22 32.90-0.14L32.90-0.14L32.90-0.14Q32.04-0.50 31.42-1.15L31.42-1.15L31.42-1.15Q30.80-1.80 30.45-2.70L30.45-2.70L30.45-2.70Q30.10-3.60 30.10-4.68" fill="#51cacc" stroke="none" stroke-width="none" transform="translate(-72.7400107383728,5.032984794448394)" style="fill: rgb(222, 157, 214);"/></g><g class="path" style="transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: -27.22px 0.352985px; animation: 1s linear -0.465882s infinite normal forwards running bounce-e4bb3182-e2d4-417c-a5dd-130f79a7694c;"><path d="M48.53-4.68L48.53-4.68L48.53-4.68Q48.53-5.38 48.30-6.01L48.30-6.01L48.30-6.01Q48.08-6.64 47.67-7.11L47.67-7.11L47.67-7.11Q47.27-7.58 46.72-7.86L46.72-7.86L46.72-7.86Q46.17-8.14 45.52-8.14L45.52-8.14L45.52-8.14Q44.10-8.14 43.31-7.20L43.31-7.20L43.31-7.20Q42.52-6.26 42.52-4.72L42.52-4.72L42.52-4.72Q42.52-4.01 42.74-3.38L42.74-3.38L42.74-3.38Q42.97-2.74 43.37-2.26L43.37-2.26L43.37-2.26Q43.78-1.78 44.33-1.50L44.33-1.50L44.33-1.50Q44.87-1.22 45.52-1.22L45.52-1.22L45.52-1.22Q46.22-1.22 46.78-1.48L46.78-1.48L46.78-1.48Q47.34-1.73 47.73-2.19L47.73-2.19L47.73-2.19Q48.11-2.65 48.32-3.28L48.32-3.28L48.32-3.28Q48.53-3.91 48.53-4.68zM40.86-4.68L40.86-4.68L40.86-4.68Q40.86-5.81 41.22-6.72L41.22-6.72L41.22-6.72Q41.58-7.63 42.20-8.26L42.20-8.26L42.20-8.26Q42.82-8.89 43.68-9.23L43.68-9.23L43.68-9.23Q44.53-9.58 45.52-9.58L45.52-9.58L45.52-9.58Q46.49-9.58 47.35-9.23L47.35-9.23L47.35-9.23Q48.20-8.89 48.83-8.26L48.83-8.26L48.83-8.26Q49.46-7.63 49.82-6.73L49.82-6.73L49.82-6.73Q50.18-5.83 50.18-4.72L50.18-4.72L50.18-4.72Q50.18-3.60 49.83-2.69L49.83-2.69L49.83-2.69Q49.48-1.78 48.85-1.13L48.85-1.13L48.85-1.13Q48.22-0.49 47.37-0.14L47.37-0.14L47.37-0.14Q46.51 0.22 45.52 0.22L45.52 0.22L45.52 0.22Q44.51 0.22 43.66-0.14L43.66-0.14L43.66-0.14Q42.80-0.50 42.18-1.15L42.18-1.15L42.18-1.15Q41.56-1.80 41.21-2.70L41.21-2.70L41.21-2.70Q40.86-3.60 40.86-4.68" fill="#51cacc" stroke="none" stroke-width="none" transform="translate(-72.7400107383728,5.032984794448394)" style="fill: rgb(255, 112, 142);"/></g><g class="path" style="transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: -18.095px -1.51701px; animation: 1s linear -0.427059s infinite normal forwards running bounce-e4bb3182-e2d4-417c-a5dd-130f79a7694c;"><path d="M53.87-13.32L53.87-3.10L53.87-3.10Q53.87-2.12 54.28-1.66L54.28-1.66L54.28-1.66Q54.68-1.19 55.40-1.19L55.40-1.19L55.40-1.19Q55.75-1.19 56.07-1.27L56.07-1.27L56.07-1.27Q56.39-1.35 56.65-1.46L56.65-1.46L57.04-0.14L57.04-0.14Q56.72 0 56.24 0.11L56.24 0.11L56.24 0.11Q55.76 0.22 55.19 0.22L55.19 0.22L55.19 0.22Q54.56 0.22 54.03 0.04L54.03 0.04L54.03 0.04Q53.50-0.14 53.10-0.52L53.10-0.52L53.10-0.52Q52.70-0.90 52.48-1.49L52.48-1.49L52.48-1.49Q52.25-2.09 52.25-2.93L52.25-2.93L52.25-13.32L53.87-13.32" fill="#51cacc" stroke="none" stroke-width="none" transform="translate(-72.7400107383728,5.032984794448394)" style="fill: rgb(81, 202, 204);"/></g><g class="path" style="transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: -10.21px -1.26702px; animation: 1s linear -0.388235s infinite normal forwards running bounce-e4bb3182-e2d4-417c-a5dd-130f79a7694c;"><path d="M58.75 0L58.75-12.60L66.31-12.60L66.31-11.12L60.46-11.12L60.46-7.29L65.50-7.29L65.50-5.85L60.46-5.85L60.46-1.48L66.31-1.48L66.31 0L58.75 0" fill="#51cacc" stroke="none" stroke-width="none" transform="translate(-72.7400107383728,5.032984794448394)" style="fill: rgb(157, 248, 113);"/></g><g class="path" style="transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: -1.36001px 0.262985px; animation: 1s linear -0.349412s infinite normal forwards running bounce-e4bb3182-e2d4-417c-a5dd-130f79a7694c;"><path d="M70.52 0L66.76-8.93L68.24-9.54L71.42-1.84L74.61-9.54L76.00-8.93L72.22 0L70.52 0" fill="#51cacc" stroke="none" stroke-width="none" transform="translate(-72.7400107383728,5.032984794448394)" style="fill: rgb(224, 255, 119);"/></g><g class="path" style="transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: 8.01999px 0.352985px; animation: 1s linear -0.310588s infinite normal forwards running bounce-e4bb3182-e2d4-417c-a5dd-130f79a7694c;"><path d="M84.83-4.01L78.28-4.01L78.28-4.01Q78.44-2.70 79.20-1.96L79.20-1.96L79.20-1.96Q79.96-1.22 81.20-1.22L81.20-1.22L81.20-1.22Q82.01-1.22 82.66-1.40L82.66-1.40L82.66-1.40Q83.30-1.57 83.90-1.84L83.90-1.84L84.28-0.45L84.28-0.45Q83.63-0.14 82.82 0.04L82.82 0.04L82.82 0.04Q82.01 0.22 81.00 0.22L81.00 0.22L81.00 0.22Q79.99 0.22 79.18-0.12L79.18-0.12L79.18-0.12Q78.37-0.45 77.81-1.07L77.81-1.07L77.81-1.07Q77.24-1.69 76.93-2.60L76.93-2.60L76.93-2.60Q76.63-3.51 76.63-4.68L76.63-4.68L76.63-4.68Q76.63-5.72 76.93-6.62L76.93-6.62L76.93-6.62Q77.24-7.52 77.80-8.18L77.80-8.18L77.80-8.18Q78.35-8.84 79.13-9.21L79.13-9.21L79.13-9.21Q79.90-9.58 80.86-9.58L80.86-9.58L80.86-9.58Q81.86-9.58 82.62-9.23L82.62-9.23L82.62-9.23Q83.38-8.89 83.88-8.30L83.88-8.30L83.88-8.30Q84.38-7.70 84.64-6.91L84.64-6.91L84.64-6.91Q84.89-6.12 84.89-5.24L84.89-5.24L84.89-5.24Q84.89-4.61 84.83-4.01L84.83-4.01zM80.82-8.17L80.82-8.17L80.82-8.17Q79.76-8.17 79.08-7.45L79.08-7.45L79.08-7.45Q78.41-6.73 78.26-5.33L78.26-5.33L83.39-5.33L83.39-5.33Q83.39-6.70 82.71-7.43L82.71-7.43L82.71-7.43Q82.03-8.17 80.82-8.17" fill="#51cacc" stroke="none" stroke-width="none" transform="translate(-72.7400107383728,5.032984794448394)" style="fill: rgb(222, 157, 214);"/></g><g class="path" style="transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: 17.09px 0.242985px; animation: 1s linear -0.271765s infinite normal forwards running bounce-e4bb3182-e2d4-417c-a5dd-130f79a7694c;"><path d="M92.61-9.47L92.12-7.79L92.12-7.79Q91.78-7.94 91.31-7.94L91.31-7.94L91.31-7.94Q90.81-7.94 90.33-7.72L90.33-7.72L90.33-7.72Q89.86-7.51 89.49-7.07L89.49-7.07L89.49-7.07Q89.12-6.64 88.89-5.97L88.89-5.97L88.89-5.97Q88.67-5.29 88.67-4.37L88.67-4.37L88.67 0L87.05 0L87.05-9.36L88.61-9.36L88.61-7.33L88.61-7.33Q88.78-7.76 89.05-8.17L89.05-8.17L89.05-8.17Q89.32-8.59 89.69-8.89L89.69-8.89L89.69-8.89Q90.05-9.20 90.54-9.39L90.54-9.39L90.54-9.39Q91.03-9.58 91.62-9.58L91.62-9.58L91.62-9.58Q91.89-9.58 92.15-9.55L92.15-9.55L92.15-9.55Q92.41-9.52 92.61-9.47L92.61-9.47" fill="#51cacc" stroke="none" stroke-width="none" transform="translate(-72.7400107383728,5.032984794448394)" style="fill: rgb(255, 112, 142);"/></g><g class="path" style="transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: 24.71px 2.33298px; animation: 1s linear -0.232941s infinite normal forwards running bounce-e4bb3182-e2d4-417c-a5dd-130f79a7694c;"><path d="M94.46 4.18L94.46 4.18L94.46 4.18Q93.92 4.18 93.52 4.07L93.52 4.07L93.52 4.07Q93.11 3.96 92.88 3.82L92.88 3.82L93.24 2.47L93.24 2.47Q93.46 2.59 93.77 2.68L93.77 2.68L93.77 2.68Q94.09 2.77 94.50 2.77L94.50 2.77L94.50 2.77Q94.88 2.77 95.21 2.66L95.21 2.66L95.21 2.66Q95.54 2.56 95.85 2.29L95.85 2.29L95.85 2.29Q96.16 2.02 96.44 1.55L96.44 1.55L96.44 1.55Q96.71 1.08 96.98 0.38L96.98 0.38L97.40-0.70L96.53-0.70L92.88-8.93L94.32-9.58L97.81-1.78L100.53-9.50L102.02-8.93L98.59 0.47L98.59 0.47Q98.19 1.55 97.75 2.26L97.75 2.26L97.75 2.26Q97.31 2.97 96.80 3.40L96.80 3.40L96.80 3.40Q96.30 3.83 95.72 4.01L95.72 4.01L95.72 4.01Q95.13 4.18 94.46 4.18" fill="#51cacc" stroke="none" stroke-width="none" transform="translate(-72.7400107383728,5.032984794448394)" style="fill: rgb(81, 202, 204);"/></g><g class="path" style="transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: 33.375px -1.26702px; animation: 1s linear -0.194118s infinite normal forwards running bounce-e4bb3182-e2d4-417c-a5dd-130f79a7694c;"><path d="M101.39-11.09L101.39-12.60L110.84-12.60L110.84-11.09L106.97-11.09L106.97 0L105.26 0L105.26-11.09L101.39-11.09" fill="#51cacc" stroke="none" stroke-width="none" transform="translate(-72.7400107383728,5.032984794448394)" style="fill: rgb(157, 248, 113);"/></g><g class="path" style="transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: 43.655px -1.62702px; animation: 1s linear -0.155294s infinite normal forwards running bounce-e4bb3182-e2d4-417c-a5dd-130f79a7694c;"><path d="M114.08-13.32L114.08-7.87L114.08-7.87Q114.59-8.60 115.35-9.09L115.35-9.09L115.35-9.09Q116.12-9.58 117.18-9.58L117.18-9.58L117.18-9.58Q118.76-9.58 119.55-8.62L119.55-8.62L119.55-8.62Q120.33-7.67 120.33-6.10L120.33-6.10L120.33 0L118.71 0L118.71-5.92L118.71-5.92Q118.71-6.95 118.25-7.55L118.25-7.55L118.25-7.55Q117.79-8.15 116.93-8.15L116.93-8.15L116.93-8.15Q116.51-8.15 116.11-8.00L116.11-8.00L116.11-8.00Q115.70-7.85 115.34-7.58L115.34-7.58L115.34-7.58Q114.98-7.31 114.66-6.95L114.66-6.95L114.66-6.95Q114.34-6.59 114.08-6.19L114.08-6.19L114.08 0L112.46 0L112.46-13.32L114.08-13.32" fill="#51cacc" stroke="none" stroke-width="none" transform="translate(-72.7400107383728,5.032984794448394)" style="fill: rgb(224, 255, 119);"/></g><g class="path" style="transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: 51.19px 0.352985px; animation: 1s linear -0.116471s infinite normal forwards running bounce-e4bb3182-e2d4-417c-a5dd-130f79a7694c;"><path d="M124.74-9.36L124.74 0L123.12 0L123.12-9.36L124.74-9.36" fill="#51cacc" stroke="none" stroke-width="none" transform="translate(-72.7400107383728,5.032984794448394)" style="fill: rgb(222, 157, 214);"/></g><g class="path" style="transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: 51.19px -7.06202px; animation: 1s linear -0.0776471s infinite normal forwards running bounce-e4bb3182-e2d4-417c-a5dd-130f79a7694c;"><path d="M123.93-10.96L123.93-10.96L123.93-10.96Q123.46-10.96 123.13-11.30L123.13-11.30L123.13-11.30Q122.80-11.63 122.80-12.10L122.80-12.10L122.80-12.10Q122.80-12.62 123.10-12.92L123.10-12.92L123.10-12.92Q123.41-13.23 123.93-13.23L123.93-13.23L123.93-13.23Q124.40-13.23 124.73-12.90L124.73-12.90L124.73-12.90Q125.06-12.56 125.06-12.10L125.06-12.10L125.06-12.10Q125.06-11.57 124.76-11.27L124.76-11.27L124.76-11.27Q124.45-10.96 123.93-10.96" fill="#51cacc" stroke="none" stroke-width="none" transform="translate(-72.7400107383728,5.032984794448394)" style="fill: rgb(255, 112, 142);"/></g><g class="path" style="transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: 58.815px 0.242985px; animation: 1s linear -0.0388235s infinite normal forwards running bounce-e4bb3182-e2d4-417c-a5dd-130f79a7694c;"><path d="M129.19-9.36L129.19-7.79L129.19-7.79Q129.69-8.55 130.47-9.06L130.47-9.06L130.47-9.06Q131.26-9.58 132.34-9.58L132.34-9.58L132.34-9.58Q133.92-9.58 134.70-8.62L134.70-8.62L134.70-8.62Q135.49-7.67 135.49-6.10L135.49-6.10L135.49 0L133.87 0L133.87-5.92L133.87-5.92Q133.87-6.95 133.40-7.55L133.40-7.55L133.40-7.55Q132.93-8.15 132.07-8.15L132.07-8.15L132.07-8.15Q131.65-8.15 131.26-8.00L131.26-8.00L131.26-8.00Q130.86-7.85 130.49-7.58L130.49-7.58L130.49-7.58Q130.12-7.31 129.81-6.95L129.81-6.95L129.81-6.95Q129.49-6.59 129.24-6.19L129.24-6.19L129.24 0L127.62 0L127.62-9.36L129.19-9.36" fill="#51cacc" stroke="none" stroke-width="none" transform="translate(-72.7400107383728,5.032984794448394)" style="fill: rgb(81, 202, 204);"/></g><g class="path" style="transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: 69.095px 2.33298px; animation: 1s linear 0s infinite normal forwards running bounce-e4bb3182-e2d4-417c-a5dd-130f79a7694c;"><path d="M141.98-9.58L141.98-9.58L141.98-9.58Q142.79-9.58 143.43-9.31L143.43-9.31L143.43-9.31Q144.07-9.04 144.54-8.64L144.54-8.64L144.54-9.36L146.02-9.36L146.02-0.22L146.02-0.22Q146.02 0.95 145.71 1.78L145.71 1.78L145.71 1.78Q145.40 2.61 144.84 3.14L144.84 3.14L144.84 3.14Q144.27 3.67 143.48 3.92L143.48 3.92L143.48 3.92Q142.69 4.18 141.71 4.18L141.71 4.18L141.71 4.18Q140.87 4.18 140.09 3.98L140.09 3.98L140.09 3.98Q139.32 3.78 138.71 3.38L138.71 3.38L139.30 1.98L139.30 1.98Q139.73 2.32 140.31 2.55L140.31 2.55L140.31 2.55Q140.89 2.77 141.71 2.77L141.71 2.77L141.71 2.77Q142.99 2.77 143.72 2.11L143.72 2.11L143.72 2.11Q144.45 1.44 144.45-0.05L144.45-0.05L144.45-1.21L144.45-1.21Q144.09-0.77 143.42-0.39L143.42-0.39L143.42-0.39Q142.74 0 141.80 0L141.80 0L141.80 0Q141.01 0 140.26-0.32L140.26-0.32L140.26-0.32Q139.50-0.63 138.92-1.23L138.92-1.23L138.92-1.23Q138.35-1.84 138.00-2.71L138.00-2.71L138.00-2.71Q137.65-3.58 137.65-4.72L137.65-4.72L137.65-4.72Q137.65-5.76 137.99-6.65L137.99-6.65L137.99-6.65Q138.33-7.54 138.92-8.19L138.92-8.19L138.92-8.19Q139.50-8.84 140.29-9.21L140.29-9.21L140.29-9.21Q141.08-9.58 141.98-9.58zM142.16-1.44L142.16-1.44L142.16-1.44Q142.88-1.44 143.46-1.76L143.46-1.76L143.46-1.76Q144.04-2.09 144.40-2.52L144.40-2.52L144.40-7.42L144.40-7.42Q143.98-7.70 143.44-7.94L143.44-7.94L143.44-7.94Q142.90-8.17 142.15-8.17L142.15-8.17L142.15-8.17Q141.59-8.17 141.08-7.95L141.08-7.95L141.08-7.95Q140.56-7.72 140.17-7.29L140.17-7.29L140.17-7.29Q139.77-6.86 139.54-6.24L139.54-6.24L139.54-6.24Q139.30-5.62 139.30-4.81L139.30-4.81L139.30-4.81Q139.30-4.03 139.54-3.41L139.54-3.41L139.54-3.41Q139.77-2.79 140.17-2.35L140.17-2.35L140.17-2.35Q140.56-1.91 141.08-1.67L141.08-1.67L141.08-1.67Q141.59-1.44 142.16-1.44" fill="#51cacc" stroke="none" stroke-width="none" transform="translate(-72.7400107383728,5.032984794448394)" style="fill: rgb(157, 248, 113);"/></g></g>
+</g>
+</g>
+</svg>
+
+    </div>
+
+  </div>
+
+  <div class="nav-links  z-50 flex flex-row">
+<!-- v-if="user" -->
+     <a  href="#">    <NavBarMarksMenu > Error NavBarMarksMenu</NavBarMarksMenu></a>
+     <a href="#"  class="dropdown     "> 
+  <div class=" dropbtn h-6" >
+    <div class="flex">
+      <span class="text-sm">{{user.name}}</span>
+
+
+<img alt="Image" 
+:src="'/marks/avatar/'+this.$store.getters.user.id+'.jpg?'+Math.random()"
+class="avatar my-0  mr-12 ml-4">
+ </div>
+
+
+
+  </div>
+
+
+  <div class="dropdown-content">
+
+
+                    <div @click="logout" class="ar p-4 flex  items-center cursor-pointer">
+                        <LogoutIcon class="h-6 w-6 text-gray-700 mr-2"></LogoutIcon>
+
+                        Logout
+                    </div>
+
+  </div>
+
+   </a>
+</div>
+
+
+
+
+
+
+  </div>
+
+
+  </div>
+</template>
+
+<script>
+import sideBar from '../../components/sideBar.vue'
+import NavBarAdminMenu from '../../components/NavBar/NavBarAdminMenu.vue'
+import NavBarTeacherMenu from '../../components/NavBar/NavBarTeacherMenu.vue'
+import NavBarStudentMenu from '../../components/NavBar/NavBarStudentMenu.vue'
+import NavBaruserMenu from '../../components/NavBar/NavBaruserMenu.vue'
+import NavBarMarksMenu from '../../components/NavBar/NavBarMarksMenu.vue'
+
+import { CogIcon , LogoutIcon , ChevronDownIcon } from '@heroicons/vue/outline';
+
+export default {
+      components: { sideBar,
+      CogIcon , LogoutIcon , ChevronDownIcon,
+      NavBarAdminMenu,
+      NavBarTeacherMenu,
+      NavBarStudentMenu,
+      NavBaruserMenu,
+      NavBarMarksMenu,
+      
+      
+      } ,
+ 
+  data() {
+    return {
+                rn:'home',
+            drop : false ,showm: false ,
+      togTopnav:false,
+       
+    };
+  },
+      created: function() {
+        if(this.$store.getters.user) {
+            let self = this ;   
+            window.addEventListener('click', function(e){
+                if ( self.$refs.dropMenu && !self.$refs.dropMenu.contains(e.target) ){
+                    self.drop = false
+                } 
+            })
+        }
+
+                      // var   lastPath = this.$router.options.history.state.back
+                      if (!this.$router.options.history.state.back) {
+                        this.rn ='/home'
+                      }else{
+                        this.rn =this.$router.options.history.state.back
+                      }
+
+    },
+
+
+  mounted() {
+    
+  },
+
+  methods: {
+            async logout() {
+            await this.$store.dispatch('logout');
+            this.$router.push({name : 'marks_login'});
+        },
+  },
+    computed : {
+        user() {
+            return this.$store.getters.user ;
+        }
+
+      },
+};
+</script>
+
+<style   >
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #4d4d4d;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+.nav > .nav-links > .a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.nav > .nav-links > .a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+    .nav > .nav-links > .a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+ 
+ /* ================================= */
+.dropbtn {
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+
+  /* display: inline-block; */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+    right: 0px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content .ar {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content .ar:hover {background-color: #f1f1f1}
+
+/* .dropdown:hover .dropdown-content {
+  display: block;
+} */
+
+/* .dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+} */
+
+
+
+.avatar {
+    display: inline-block;
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    border: #dee2e6;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 1rem rgb(0 0 0 / 15%);
+    line-height: 3rem;
+    cursor: pointer;
+}
+.avatar:hover {
+box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.avatar.avatar-sm {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* -------------------------- */
+
+
+
+</style>
+
+
+<style id="bounce-e4bb3182-e2d4-417c-a5dd-130f79a7694c" data-anikit="">
+
+@keyframes bounce-e4bb3182-e2d4-417c-a5dd-130f79a7694c
+
+{
+  0% {
+    animation-timing-function: cubic-bezier(0.1361,0.2514,0.2175,0.8786);
+    transform: translate(0,0px) scaleY(1);
+  }
+  37% {
+    animation-timing-function: cubic-bezier(0.7674,0.1844,0.8382,0.7157);
+    transform: translate(0,5.994px) scaleY(1);
+  }
+  72% {
+    animation-timing-function: cubic-bezier(0.3284,0.624,0.6096,0.961);
+    transform: translate(0,0px) scaleY(1);
+  }
+  87% {
+    animation-timing-function: cubic-bezier(0.3784,0.1135,0.6826,0.4604);
+    transform: translate(0,-2.199999999999997px) scaleY(0.9500000000000001);
+  }
+  100% {
+    transform: translate(0,0px) scaleY(1);
+  }
+}
+
+</style>
+
+

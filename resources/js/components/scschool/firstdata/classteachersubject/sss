@@ -1,0 +1,138 @@
+class="hvr-grow">Grow</a>
+class="hvr-shrink">Shrink</a>
+class="hvr-pulse">Pulse</a>
+class="hvr-pulse-grow">Pulse Grow</a>
+class="hvr-pulse-shrink">Pulse Shrink</a>
+class="hvr-push">Push</a>
+class="hvr-pop">Pop</a>
+class="hvr-bounce-in">Bounce In</a>
+class="hvr-bounce-out">Bounce Out</a>
+class="hvr-rotate">Rotate</a>
+class="hvr-grow-rotate">Grow Rotate</a>
+class="hvr-float">Float</a>
+class="hvr-sink">Sink</a>
+class="hvr-bob">Bob</a>
+class="hvr-hang">Hang</a>
+class="hvr-skew">Skew</a>
+class="hvr-skew-forward">Skew Forward</a>
+class="hvr-skew-backward">Skew Backward</a>
+class="hvr-wobble-horizontal">Wobble Horizontal</a>
+class="hvr-wobble-vertical">Wobble Vertical</a>
+class="hvr-wobble-to-bottom-right">Wobble To Bottom Right</a>
+class="hvr-wobble-to-top-right">Wobble To Top Right</a>
+class="hvr-wobble-top">Wobble Top</a>
+class="hvr-wobble-bottom">Wobble Bottom</a>
+class="hvr-wobble-skew">Wobble Skew</a>
+class="hvr-buzz">Buzz</a>
+class="hvr-buzz-out">Buzz Out</a>
+class="hvr-forward">Forward</a>
+class="hvr-backward">Backward</a>
+class="hvr-fade">Fade</a>
+class="hvr-back-pulse">Back Pulse</a>
+class="hvr-sweep-to-right">Sweep To Right</a>
+class="hvr-sweep-to-left">Sweep To Left</a>
+class="hvr-sweep-to-bottom">Sweep To Bottom</a>
+class="hvr-sweep-to-top">Sweep To Top</a>
+class="hvr-bounce-to-right">Bounce To Right</a>
+class="hvr-bounce-to-left">Bounce To Left</a>
+class="hvr-bounce-to-bottom">Bounce To Bottom</a>
+class="hvr-bounce-to-top">Bounce To Top</a>
+class="hvr-radial-out">Radial Out</a>
+class="hvr-radial-in">Radial In</a>
+class="hvr-rectangle-in">Rectangle In</a>
+class="hvr-rectangle-out">Rectangle Out</a>
+class="hvr-shutter-in-horizontal">Shutter In Horizontal</a>
+class="hvr-shutter-out-horizontal">Shutter Out Horizontal</a>
+class="hvr-shutter-in-vertical">Shutter In Vertical</a>
+class="hvr-shutter-out-vertical">Shutter Out Vertical</a>
+https://fortawesome.github.io/Font-Awesome/">FontAwesome</a>. <a href="https://github.com
+class="hvr-icon-back">
+icon"></i> Icon Back
+class="hvr-icon-forward">
+-icon"></i>
+class="hvr-icon-down">
+-down hvr-icon"></i>
+class="hvr-icon-up">
+p hvr-icon"></i>
+class="hvr-icon-spin">
+on"></i>
+class="hvr-icon-drop">
+></i>
+class="hvr-icon-fade">
+"></i>
+class="hvr-icon-float-away">
+cle hvr-icon"></i>
+class="hvr-icon-sink-away">
+cle hvr-icon"></i>
+class="hvr-icon-grow">
+on"></i>
+class="hvr-icon-shrink">
+icon"></i>
+class="hvr-icon-pulse">
+"></i>
+class="hvr-icon-pulse-grow">
+-icon"></i>
+class="hvr-icon-pulse-shrink">
+vr-icon"></i>
+class="hvr-icon-push">
+n"></i>
+class="hvr-icon-pop">
+</i>
+class="hvr-icon-bounce">
+hvr-icon"></i>
+class="hvr-icon-rotate">
+r-icon"></i>
+class="hvr-icon-grow-rotate">
+vr-icon"></i>
+class="hvr-icon-float">
+o-up hvr-icon"></i>
+class="hvr-icon-sink">
+-down hvr-icon"></i>
+class="hvr-icon-bob">
+icon"></i>
+class="hvr-icon-hang">
+vr-icon"></i>
+class="hvr-icon-wobble-horizontal">
+rrow-right hvr-icon"></i>
+class="hvr-icon-wobble-vertical">
+ow-up hvr-icon"></i>
+class="hvr-icon-buzz">
+on"></i>
+class="hvr-icon-buzz-out">
+con"></i>
+class="hvr-border-fade">Border Fade</a>
+class="hvr-hollow">Hollow</a>
+class="hvr-trim">Trim</a>
+class="hvr-ripple-out">Ripple Out</a>
+class="hvr-ripple-in">Ripple In</a>
+class="hvr-outline-out">Outline Out</a>
+class="hvr-outline-in">Outline In</a>
+class="hvr-round-corners">Round Corners</a>
+class="hvr-underline-from-left">Underline From Left</a>
+class="hvr-underline-from-center">Underline From Center</a>
+class="hvr-underline-from-right">Underline From Right</a>
+class="hvr-reveal">Reveal</a>
+class="hvr-underline-reveal">Underline Reveal</a>
+class="hvr-overline-reveal">Overline Reveal</a>
+class="hvr-overline-from-left">Overline From Left</a>
+class="hvr-overline-from-center">Overline From Center</a>
+class="hvr-overline-from-right">Overline From Right</a>
+class="hvr-shadow">Shadow</a>
+class="hvr-grow-shadow">Grow Shadow</a>
+class="hvr-float-shadow">Float Shadow</a>
+class="hvr-glow">Glow</a>
+class="hvr-shadow-radial">Shadow Radial</a>
+class="hvr-box-shadow-outset">Box Shadow Outset</a>
+class="hvr-box-shadow-inset">Box Shadow Inset</a>
+class="hvr-bubble-top">Bubble Top</a>
+class="hvr-bubble-right">Bubble Right</a>
+class="hvr-bubble-bottom">Bubble Bottom</a>
+class="hvr-bubble-left">Bubble Left</a>
+class="hvr-bubble-float-top">Bubble Float Top</a>
+class="hvr-bubble-float-right">Bubble Float Right</a>
+class="hvr-bubble-float-bottom">Bubble Float Bottom</a>
+class="hvr-bubble-float-left">Bubble Float Left</a>
+class="hvr-curl-top-left">Curl Top Left</a>
+class="hvr-curl-top-right">Curl Top Right</a>
+class="hvr-curl-bottom-right">Curl Bottom Right</a>
+class="hovp">Curl Bottom Left</a>

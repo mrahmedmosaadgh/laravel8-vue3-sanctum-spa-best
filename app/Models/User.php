@@ -9,9 +9,11 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Laratrust\Traits\LaratrustUserTrait;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
+    use LaratrustUserTrait;
     use HasFactory, Notifiable, HasApiTokens;
 
     /**
@@ -19,11 +21,12 @@ class User extends Authenticatable implements MustVerifyEmail
      *
      * @var array
      */
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-    ];
+    // protected $fillable = [
+    //     'name',
+    //     'email',
+    //     'password',
+    // ];
+    protected $guarded = [];
 
     /**
      * The attributes that should be hidden for arrays.
@@ -52,5 +55,39 @@ class User extends Authenticatable implements MustVerifyEmail
     public function sendEmailVerificationNotification()
     {
         $this->notify(new VerifyEmailNotification());
+    }
+
+
+
+
+
+    public function teacherdata()
+    {
+        return $this->hasOne(scschoolteacher::class);
+    }
+    public function studentdata()
+    {
+        return $this->hasOne(scschoolstudent::class);
+    }
+    public function classdata()
+    {
+        return $this->hasOne(scschoolclass::class);
+    }
+
+    public function myclass()
+    {
+        return $this->hasOne('App\Models\scschoolclass','id','class_id');
+    }
+
+    public function thisismyclasses()
+    {
+        return $this->belongsToMany('App\Models\scschoolclass','scschoolclassteachersubjects','teacher_id','class_id');//ok
+    }
+
+    public function tcs()
+    {
+        return $this->belongsToMany('App\Models\scschoolclass','scschoolclassteachersubjects','teacher_id','id');//ok
+        // return $this->belongsToMany('App\Models\scschoolclass','scschoolclassteachersubjects','teacher_id','teacher_id');//ok
+        // return $this->belongsToMany('App\Models\scschoolclass','scschoolclassteachersubjects','teacher_id','teacher_id');//ok
     }
 }

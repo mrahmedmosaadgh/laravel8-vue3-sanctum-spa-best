@@ -16,13 +16,15 @@ class CreateScschoolparentsTable extends Migration
         Schema::create('scschoolparents', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('schoolgroup_id')->nullable(); 
-            $table->unsignedBigInteger('school_id')->nullable(); 
-            $table->unsignedBigInteger('parent_id')->nullable(); 
+            $table->unsignedBigInteger('school_id'); 
+            $table->unsignedBigInteger('parent_id'); 
             $table->unsignedBigInteger('student_ids')->nullable(); 
             $table->string('notes1')->nullable();
             $table->string('notes2')->nullable();
             $table->string('notes3')->nullable();
             $table->timestamps();
+            $table->foreign('parent_id')->references('id')->on('users')->onDelete('cascade');
+
         });
     }
 

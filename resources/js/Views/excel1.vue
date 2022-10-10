@@ -2,27 +2,13 @@
     <div>
          <h1>Upload an excel file to display in HTML Table</h1>
     <!-- Input element to upload an excel file -->
-    <input type="file" id="file_upload" 
-     
- @change="onChange"
+<input type="file" id="file_upload" @change="onChange"/>
 
-    />
+    <button @click="upload()">Upload</button><br>
 
-    <button @click="upload()">
-    Upload
-    </button>  
-    <br>
-    <br>
     <!-- table to display the excel data  border="1"v-model="display_excel_datavue"id="display_excel_data"  
 -->
-    <table 
-     v-html="display_excel_datavue"
-     
-    ></table>
-    <!-- <div  v-html="display_excel_datavue"></div> -->
-<!-- <div v-html="html"></div> -->
-
-
+    <table  v-html="display_excel_datavue"></table>
 
     </div>
 </template>
@@ -36,23 +22,18 @@ data() {
     return {
       file: null,
       display_excel_datavue: null,
-    } 
+    }
   },
     methods: {
         onChange(event) {
       this.file = event.target.files ? event.target.files[0] : null;
-       
       alert('ok')
       this.upload()
     },
  // Method to upload a valid excel file
         upload() {
-
-
         // var files = document.getElementById('file_upload').files;
 var files = this.file;
-
-
         if(files.length==0){
           alert("Please choose any file...");
           return;
@@ -72,8 +53,7 @@ console.log(filename)
             alert("Please select a valid excel file.");
         }
       },
-       
-      //Method to read excel file and convert it into JSON 
+             //Method to read excel file and convert it into JSON 
        excelFileToJSON11(file){
         console.log('excelFileToJSON11')
           try {
@@ -123,9 +103,9 @@ console.log(jsonData)
             // table.innerHTML='There is no data in Excel';
              this.display_excel_datavue='There is no data in Excel';
         }
-      }
+      }// excelToJson 
 
-// excelToJson 
+
 
 
     },
