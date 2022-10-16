@@ -20,6 +20,10 @@ import 'mosha-vue-toastify/dist/style.css'
 
 import VueCookies from 'vue3-cookies'
 import AudioVisual from 'vue-audio-visual'
+import VueClipboard from 'vue3-clipboard'
+
+
+
 // import { VueReCaptcha } from 'vue-recaptcha-v3'
 // import  MathJax from 'vuemathjax'
 
@@ -98,6 +102,11 @@ store.dispatch('getUser').then(()=>{
         .use(moshaToast)
         .use(VueCookies)
         .use(AudioVisual)
+        // .use(VueClipboard)
+        .use(VueClipboard, {
+          autoSetContainer: true,
+          appendToBody: true,
+        })
         // .use(VueReCaptcha, { siteKey: '6Ldz5xwiAAAAAK4guw_OPmnZgK7JFfZQXQiU7bNy' })
         // .use(YyMathjax,config)
         // .use(FontAwesomeIcon)

@@ -2,12 +2,14 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ControlmarkController;
+use App\Http\Controllers\ControlmarksSetupController;
 use App\Http\Controllers\ForgotPasswordController;
 use App\Http\Controllers\MarksMarkController;
 use App\Http\Controllers\PasswordController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\ResetPasswordController;
+use App\Http\Controllers\SavecodeController;
 use App\Http\Controllers\ScmenuController;
 use App\Http\Controllers\ScschoolcalenderController;
 use App\Http\Controllers\ScschoolclasseController;
@@ -75,8 +77,17 @@ php artisan route:list
 
 
 */
-// -------marks------------------------------------------------------------------------------------------------------------------------
+// -------marks forqan------------------------------------------------------------------------------------------------------------------------
 // get_MarksSetup
+            Route::post('/forqan/controlmarkssetups', [ControlmarksSetupController::class, 'controlmarkssetups']);
+            Route::post('/savecode', [SavecodeController::class, 'savecode']);
+
+
+
+
+// -------marks------------------------------------------------------------------------------------------------------------------------
+
+            
             Route::post('/marks/marks_search', [MarksMarkController::class, 'marks_search']);
             Route::post('/marks/marks_xls_to_db', [MarksMarkController::class, 'marks_xls_to_db']);
             Route::post('/marks/get_MarksSetup', [MarksMarkController::class, 'get_MarksSetup']);

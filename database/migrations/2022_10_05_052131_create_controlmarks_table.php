@@ -13,11 +13,11 @@ class CreateControlmarksTable extends Migration
      */
     public function up()
     {
-        Schema::create('controlmarks', function (Blueprint $table) {
-            $table->id();
+        Schema::create('forqan_controlmarks', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->unsignedBigInteger('controlmarkssetup_id');
             $table->unsignedBigInteger('school_id' );
             $table->unsignedBigInteger('teacher_id');
-
             $table->unsignedBigInteger('class_id'  );
             $table->unsignedBigInteger('subject_id');
             $table->unsignedBigInteger('student_id');
@@ -33,9 +33,11 @@ class CreateControlmarksTable extends Migration
             $table->string('sub8' ,50)->nullable();
             $table->string('sub9' ,50)->nullable();
             $table->string('sub10',50)->nullable();
+            $table->integer('sub_count')->nullable();
             $table->string('notes' )->nullable();
 
             $table->foreign('school_id' )->references('id')->on('users');
+            $table->foreign('controlmarkssetup_id' )->references('id')->on('forqan_controlmarks_setups');
             $table->foreign('teacher_id')->references('id')->on('users');
             $table->foreign('class_id'  )->references('id')->on('scschoolclasses');
             $table->foreign('subject_id')->references('id')->on('scschoolsubjects');

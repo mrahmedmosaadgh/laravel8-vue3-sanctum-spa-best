@@ -41,6 +41,7 @@ const todo = () => import('../Views/start/teacher/todo.vue')
 const scheduletest = () => import('../components/startcom/teacher/schedule/test.vue')
 const schoolmarks = () => import('../Views/start/teacher/schoolmarksout/main.vue')
 const controlmarks_main = () => import('../Views/start/teacher/controlmarks/controlmarks_main.vue')
+const savecode = () => import('../Views/savecode/savecode.vue')
 // controlmarks_main
     // resources\js\Views\start\teacher\controlmarks\controlmarks_main.vue
 
@@ -56,7 +57,7 @@ const marks_Profile = () => import('../Views/marks/marks_Profile.vue')//marks_lo
 const certificate = () => import('../Views/start/student/controlmarks/certificate.vue')//marks_login//const Profile = () => import('../Views/Profile.vue');
 // ---------student----------------------------------------------------------------------
 // ---- ---------------------------------------------------------------------------
-
+const controlmarkssetups = () => import('../Views/forqan/admin/controlmarkssetups.vue')
 // const classwork= () => import('../Views/start/teacher/teachermain.vue')
 // const teacherhome = () => import('../Views/start/teacher/teacherhome.vue')
 // student---------------------------------------------------------------------------------------
@@ -66,8 +67,9 @@ export default [
     
 
     // forqan--teacherhome-----------------------------------------------------------------------
+    {path: '/savecode'      ,component: savecode        ,name: 'savecode'          ,meta: { auth: true, title: 'savecode' }},
     {path: '/forqan/teacher/teacherhome'      ,component: teacherhome        ,name: 'teacherhome'          ,meta: { auth: true, title: 'teacherhome' }},
-
+    
 
         // forqan-------------------------------------------------------------------------
 
@@ -82,6 +84,11 @@ export default [
       },
     
     },
+    // forqan_controlmarks_setups--------------------------------------------------------
+    
+    {path: '/forqan/controlmarkssetups'      ,component: controlmarkssetups        ,name: 'controlmarkssetups'          ,meta: { auth: true, title: 'controlmarkssetups' }},
+    
+    // forqan_controlmarks_setups--------------------------------------------------------
     // marks_import-------------------------------------------------------------------------
     {path: '/marks/marks_import'      ,component: marks_import        ,name: 'marks_import'          ,meta: { auth: true, title: 'marks_import' }},
     // {path: '/marks/marks_search'      ,component: marks_search        ,name: 'marks_search'          ,meta: { auth: true, title: 'marks_search' }},
